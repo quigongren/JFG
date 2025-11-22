@@ -1,13 +1,6 @@
 """JFG PDF Generator v1
 
 Generates simple, professional PDFs for the JFG Project.
-
-Usage:
-
-    pip install reportlab
-    python scripts/jfg_pdf_generator.py \
-        --input docs/templates/JFG_Sample_Report.json \
-        --output exports/JFG_Sample_Report.pdf
 """
 
 import json
@@ -24,7 +17,7 @@ def draw_wrapped_text(c, text, x, y, max_width, leading=14, font_name="Helvetica
     words = text.split()
     line = []
     for word in words:
-        test_line = " ". ".join(line + [word])
+        test_line = " ".join(line + [word])
         if c.stringWidth(test_line, font_name, font_size) <= max_width:
             line.append(word)
         else:
