@@ -1,0 +1,20 @@
+JFG PDF Template – Usage
+
+This directory holds JSON templates that drive the JFG PDF Generator.
+
+Each JSON file should include fields like:
+
+{
+  "title": "Your Report Title",
+  "subtitle": "Optional subtitle text",
+  "sections": [
+    {
+      "heading": "Section heading",
+      "paragraphs": [
+        "First paragraph of this section.",
+        "Second paragraph..."
+      ]
+    }
+  ],
+  "footer": "Footer text for the bottom of each report."
+}
